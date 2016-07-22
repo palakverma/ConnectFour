@@ -94,8 +94,6 @@ def winning_case_horizontal(column_1, column_2)
 		end
 
 		left_sum_1 = check_horizontal_1(column_1, index, @piece_1)
-		
-		puts "SUM = #{right_sum_1+left_sum_1}"
 
 		if(column_2 - @winning_condition >= 0)
 			index = column_2 - @winning_condition
@@ -113,7 +111,6 @@ def winning_case_horizontal(column_1, column_2)
 
 		left_sum_2 = check_horizontal_2(column_2, index, @piece_2)
 		
-		puts "SUM = #{right_sum_2+left_sum_2}"
 
 		if (right_sum_1 + left_sum_1 >= @winning_condition-1) && (right_sum_2 + left_sum_2 >= @winning_condition-1)
 			puts "YOU GUYS TIED! YAY"
