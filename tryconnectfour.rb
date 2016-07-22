@@ -178,13 +178,13 @@ def winning_case_diagonal(column_1, column_2)
 	sum_left = check_diagonal_bottom_right(@player_1_row,column_1, @piece_1) + check_diagonal_top_left(@player_1_row,column_1, @piece_1)
 	sum_right = check_diagonal_top_right(@player_1_row,column_1, @piece_1) + check_diagonal_bottom_left(@player_1_row,column_1, @piece_1)
 	if(sum_left + sum_right > 3)
-		puts "Player 1 wins diagonally"
+		puts "#{@player_1}, you win -DIAGONALLY-!!!-"
 	end
  
 	sum_left = check_diagonal_bottom_right(@player_2_row,column_2, @piece_2) + check_diagonal_top_left(@player_2_row,column_2, @piece_2)
 	sum_right = check_diagonal_top_right(@player_2_row,column_2, @piece_2) + check_diagonal_bottom_left(@player_2_row,column_2, @piece_2)
 	if(sum_left + sum_right > 3)
-		puts "Player 2 wins diagonally"
+		puts "#{@player_2}, you win -DIAGONALLY- !!!"
 	end  
 
 end 
