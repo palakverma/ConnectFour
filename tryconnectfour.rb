@@ -136,13 +136,13 @@ def winning_case_vertical(column_1, column_2)
 		return true 
 	end
 	
-	above_1 = @board[@player_2_row-1][column_1] == @piece_1
-	above_2 = @board[@player_2_row-2][column_1] == @piece_1
-	above_3 = @board[@player_2_row-3][column_1] == @piece_1
+	above_1 = @board[@player_2_row-1][column_2] == @piece_2
+	above_2 = @board[@player_2_row-2][column_2] == @piece_2
+	above_3 = @board[@player_2_row-3][column_2] == @piece_2
 	if(above_1 && above_2 && above_3)
-		puts "#{@player_2}, you win!!! - VERTICALLY!-"
+		puts "Player 2 wins"
 		return true 
-	end 
+	end
 end
 
 def check_diagonal_bottom_left(row,column, piece)
